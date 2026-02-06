@@ -1,0 +1,110 @@
+.main-footer {
+    background-color: #ffe6f2;
+    padding: 40px 0 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.footer-heading {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    letter-spacing: 0.5px;
+}
+
+/* Opening Hours*/
+.hours-row {
+    display: flex;
+    gap: 50px;
+}
+
+.day-label {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.time-label {
+    font-size: 14px;
+    color: #4a2c2a;
+    font-weight: 500;
+}
+
+/* Social Icons Styling */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-circle {
+    width: 45px;
+    height: 45px;
+    background-color: #FF598B; 
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-circle:hover {
+    background-color: #ff87ab;
+    transform: translateY(-3px);
+}
+
+/* Bottom Bar*/
+.footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.08); /*divider line */
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #666;
+}
+
+.legal-links a {
+    text-decoration: none;
+    color: #666;
+    margin-left: 25px;
+}
+.legal-links a:hover {
+    color: #1a1a1a;
+}
+
+/* Responsive adjustments*/
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .hours-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .legal-links a {
+        margin: 0 10px;
+    }
+}
