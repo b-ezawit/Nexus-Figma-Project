@@ -16,38 +16,30 @@
     justify-content: space-between;
     align-items: flex-start;
     padding-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.footer-heading {
-    font-size: 14px;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: #1a1a1a;
-    letter-spacing: 0.5px;
+.footer-top > div {
+    flex: 1;
+    min-width: 220px;
 }
 
-/* Opening Hours*/
-.hours-row {
-    display: flex;
-    gap: 50px;
+.footer-section.social {
+    margin-left: auto;
+    text-align: right;
 }
 
-.day-label {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 4px;
-}
-
-.time-label {
-    font-size: 14px;
-    color: #4a2c2a;
-    font-weight: 500;
+.footer-section.social .footer-heading {
+    text-align: right;
+    margin-right: 70px;
 }
 
 /* Social Icons Styling */
 .social-links {
     display: flex;
     gap: 15px;
+    justify-content: flex-end;
 }
 
 .social-circle {
@@ -69,9 +61,35 @@
     transform: translateY(-3px);
 }
 
-/* Bottom Bar*/
+.footer-heading {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    letter-spacing: 0.5px;
+}
+
+/* Opening Hours */
+.hours-row {
+    display: flex;
+    gap: 50px;
+}
+
+.day-label {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.time-label {
+    font-size: 14px;
+    color: #4a2c2a;
+    font-weight: 500;
+}
+
+/* Bottom Bar */
 .footer-bottom {
-    border-top: 1px solid rgba(0, 0, 0, 0.08); /*divider line */
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -85,41 +103,12 @@
     color: #666;
     margin-left: 25px;
 }
+
 .legal-links a:hover {
     color: #1a1a1a;
 }
 
-/* Responsive adjustments*/
-@media (max-width: 768px) {
-    .footer-top {
-        flex-direction: column;
-        gap: 30px;
-    }
-    .hours-row {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .footer-bottom {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-    .legal-links a {
-        margin: 0 10px;
-    }
-}
-
-.footer-top {
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.footer-top > div {
-    flex: 1;
-    min-width: 220px;
-}
-
-/* Tablet (≤ 768px) */
+/* Tablet & Mobile */
 @media (max-width: 768px) {
     .footer-top {
         flex-direction: column;
@@ -127,14 +116,19 @@
         text-align: center;
     }
 
-    .hours-row {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+    .footer-section.social {
+        margin-left: 0;
+        text-align: center;
     }
 
     .social-links {
         justify-content: center;
+    }
+
+    .hours-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     .footer-bottom {
@@ -148,7 +142,7 @@
     }
 }
 
-/*  Mobile (≤ 480px) */
+/* Mobile */
 @media (max-width: 480px) {
     .main-footer {
         padding: 30px 0 15px;

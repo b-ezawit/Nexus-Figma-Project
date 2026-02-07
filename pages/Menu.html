@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | SweetRoot</title>
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/Menu.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../public/images/logo.png" alt="SweetRoot Logo" class="logo-img">
+            <span class="logo-text">SweetRoot</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html" style="color: #FF598B;">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-page-wrapper">
+        <section class="menu-hero">
+            <div class="sketch-left"></div>
+            <div class="sketch-right"></div>
+
+            <div class="hero-container">
+                <h1 class="hero-title">
+                    Discover, Select, Enjoy – Your <br /> Perfect Choice Awaits
+                </h1>
+
+                <div class="hero-main-content">
+                    <div class="badge-wrapper">
+                        <div class="quality-card">
+                            <div class="badge-icon-bg">
+                                <span class="icon">🎂</span>
+                            </div>
+                            <p><strong>100% Handmade Treats</strong></p>
+                            <small>Every bite filled with love and passion</small>
+                        </div>
+                    </div>
+
+                    <div class="hero-dish-container">
+                        <img src="../public/images/HeroImage.png" alt="Fresh Salad" class="main-hero-img" />
+                    </div>
+
+                    <div class="hero-info-side">
+                        <p class="hero-description">
+                            Explore our diverse menu, carefully curated for every taste.
+                            Select your favorite treats and savor every delicious bite.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="menu-dark-container">
+            <section class="full-menu-section" id="full-menu">
+                <div class="section-container">
+                    <div class="full-menu-header">
+                        <h2 class="full-menu-title">
+                            Savor the Delight <br /> in Every Bite!
+                        </h2>
+                        <div class="category-filter-bar" id="filterBar">
+                            <button class="filter-tab active" onclick="filterMenu('All', this)">All</button>
+                            <button class="filter-tab" onclick="filterMenu('Cakes', this)">Cakes</button>
+                            <button class="filter-tab" onclick="filterMenu('Cupcakes', this)">Cup Cakes</button>
+                            <button class="filter-tab" onclick="filterMenu('Cookies', this)">Cookies</button>
+                        </div>
+                    </div>
+
+                    <div class="full-menu-grid" id="menuGrid">
+                        <div class="menu-card" data-category="Cakes">
+                            <img src="../public/images/classicVanilla.jpg" alt="Classic Vanilla Cake" />
+                            <div class="menu-card-content">
+                                <h3>Classic Vanilla Cake</h3>
+                                <p>Soft vanilla sponge layered with smooth, creamy frosting.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$100.00</span>
+                                    <span class="rating">★ 3.5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cakes">
+                            <img src="../public/images/chocolate-fudge.jpg" alt="Chocolate Fudge Cake" />
+                            <div class="menu-card-content">
+                                <h3>Chocolate Fudge Cake</h3>
+                                <p>Rich chocolate layers filled with creamy chocolate ganache.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$30.00</span>
+                                    <span class="rating">★ 5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cakes">
+                            <img src="../public/images/red-velvet.jpg" alt="Red Velvet Cake" />
+                            <div class="menu-card-content">
+                                <h3>Red Velvet Cake</h3>
+                                <p>Moist red velvet sponge topped with cream cheese frosting.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$150.00</span>
+                                    <span class="rating">★ 5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cakes">
+                            <img src="../public/images/carrot-cake.jpg" alt="Carrot Cake" />
+                            <div class="menu-card-content">
+                                <h3>Carrot Cake</h3>
+                                <p>Spiced carrot cake layered with rich cream cheese topping.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$80.00</span>
+                                    <span class="rating">★ 5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cakes">
+                            <img src="../public/images/carrot-cake.jpg" alt="Coffee Cake" />
+                            <div class="menu-card-content">
+                                <h3>Coffee Cake</h3>
+                                <p>Light sponge infused with coffee flavor and smooth frosting.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$50.00</span>
+                                    <span class="rating">★ 5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cupcakes">
+                            <img src="../public/images/vanilla cupcake.jpg" alt="Vanilla Cupcake" />
+                            <div class="menu-card-content">
+                                <h3>Vanilla Cupcake</h3>
+                                <p>Mini vanilla cupcake topped with buttercream frosting.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$80.00</span>
+                                    <span class="rating">★ 4.5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cupcakes">
+                            <img src="../public/images/chocolate-cupcake.jpg" alt="Chocolate Cupcake" />
+                            <div class="menu-card-content">
+                                <h3>Chocolate Cupcake</h3>
+                                <p>Rich chocolate cupcake topped with silky chocolate frosting.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$40.00</span>
+                                    <span class="rating">★ 3.5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cupcakes">
+                            <img src="../public/images/red-velvet-cupcake.jpg" alt="Red Velvet Cupcake" />
+                            <div class="menu-card-content">
+                                <h3>Red Velvet Cupcake</h3>
+                                <p>Soft red velvet cupcake with classic cream cheese frosting.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$12.00</span>
+                                    <span class="rating">★ 5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cupcakes">
+                            <img src="../public/images/salted-caramel-cupcake.jpg" alt="Salted Caramel Cupcake" />
+                            <div class="menu-card-content">
+                                <h3>Salted Caramel Cupcake</h3>
+                                <p>Sweet caramel frosting balanced with a hint of salt.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$50.00</span>
+                                    <span class="rating">★ 4</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cupcakes">
+                            <img src="../public/images/speciality-cupcakew.jpg" alt="Specialty Cupcake" />
+                            <div class="menu-card-content">
+                                <h3>Specialty Cupcake</h3>
+                                <p>Seasonal cupcake flavors with creative toppings.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$60.00</span>
+                                    <span class="rating">★ 4.6</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cookies">
+                            <img src="../public/images/chocolate-chip-cookies.jpg" alt="Chocolate Chip Cookies" />
+                            <div class="menu-card-content">
+                                <h3>Chocolate Chip Cookies</h3>
+                                <p>Crispy edges with a soft, chocolate-filled center.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$50.00</span>
+                                    <span class="rating">★ 5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cookies">
+                            <img src="../public/images/oatmeal-cookies.jpg" alt="Oatmeal Raisin Cookies" />
+                            <div class="menu-card-content">
+                                <h3>Oatmeal Raisin Cookies</h3>
+                                <p>Hearty oatmeal cookies baked with sweet raisins.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$80.00</span>
+                                    <span class="rating">★ 5</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cookies">
+                            <img src="../public/images/peanut-butter-cookies.jpg" alt="Peanut Butter Cookies" />
+                            <div class="menu-card-content">
+                                <h3>Peanut Butter Cookies</h3>
+                                <p>Buttery cookies with rich peanut flavor.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$50.00</span>
+                                    <span class="rating">★ 4.8</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cookies">
+                            <img src="../public/images/double-choco-cookies.jpg" alt="Double Chocolate Cookies" />
+                            <div class="menu-card-content">
+                                <h3>Double Chocolate Cookies</h3>
+                                <p>Chocolate cookies packed with extra chocolate chunks.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$45.00</span>
+                                    <span class="rating">★ 4.9</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-card" data-category="Cookies">
+                            <img src="../public/images/sugar-cookies.jpg" alt="Sugar Cookies" />
+                            <div class="menu-card-content">
+                                <h3>Sugar Cookies</h3>
+                                <p>Soft, sweet cookies that melt in your mouth.</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">$40.00</span>
+                                    <span class="rating">★ 4.4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-section hours">
+                    <h3 class="footer-heading">OPENING HOURS</h3>
+                    <div class="hours-row">
+                        <div class="hours-col">
+                            <p class="day-label">Monday - Friday</p>
+                            <p class="time-label">8:00 am to 9:00 pm</p>
+                        </div>
+                        <div class="hours-col">
+                            <p class="day-label">Saturday</p>
+                            <p class="time-label">8:00 am to 9:00 pm</p>
+                        </div>
+                        <div class="hours-col">
+                            <p class="day-label">Sunday</p>
+                            <p class="time-label">CLOSED</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section social">
+                    <h3 class="footer-heading">FOLLOW US</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-circle"><img src="../public/icons/facebook.png"></a>
+                        <a href="#" class="social-circle"><img src="../public/icons/instagram.png"></a>
+                        <a href="#" class="social-circle"><img src="../public/icons/twitter.png"></a>
+                        <a href="#" class="social-circle"><img src="../public/icons/yt.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 SweetRoot. All Right Reserved.</p>
+                <div class="legal-links">
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function filterMenu(category, btn) {
+            const items = document.querySelectorAll('.menu-card');
+            const buttons = document.querySelectorAll('.filter-tab');
+
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            items.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                if (category === 'All' || itemCategory === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

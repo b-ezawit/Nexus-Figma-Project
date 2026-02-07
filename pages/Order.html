@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | SweetRoot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=David+Libre:wght@400;700&family=Inter:wght@400;600;700&family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/Order.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../public/images/logo.png" alt="SweetRoot Logo" class="logo-img">
+            <span class="logo-text">SweetRoot</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html" style="color: #FF598B;">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="order-page">
+
+        <section class="order-hero">
+            <h1 class="order-hero-title">
+                Order Your Favorite Treats, Freshly Baked for You
+            </h1>
+
+            <div class="order-hero-content">
+                <div class="order-hero-image-wrapper">
+                    <img src="../public/images/order-hero-image.png" alt="Freshly Baked Desserts" class="order-hero-img" />
+                </div>
+                <div class="order-hero-details">
+                    <p class="order-hero-subtitle">
+                        Place your bakery order with ease and enjoy handcrafted cakes, pastries,
+                        and sweet delights made fresh with love and care.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-form-section">
+            <div class="order-form-container">
+                <div class="form-header">
+                    <h2 class="form-title">Place Your Bakery Order</h2>
+                    <p class="form-subtitle">
+                        Order your favorite cakes and treats with ease. Share your preferences,
+                        pick your date, and let us create something sweet just for you.
+                    </p>
+                </div>
+
+                <form class="order-form">
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Darlene Robertson" class="form-input" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" placeholder="darlenerobert@gmail.com" class="form-input" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cakeType" class="form-label">Cake Type</label>
+                        <select id="cakeType" class="form-select">
+                            <option>Black Forest</option>
+                            <option>Chocolate Cake</option>
+                            <option>Vanilla Cake</option>
+                            <option>Red Velvet</option>
+                            <option>Custom Design</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pickupTime" class="form-label">Preferred Pickup Time</label>
+                        <select id="pickupTime" class="form-select">
+                            <option>10:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>02:00 PM</option>
+                            <option>04:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pickupDate" class="form-label">Preferred Pickup Date</label>
+                        <input type="date" id="pickupDate" class="form-input date-input" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dietary" class="form-label">Special Requests (Optional)</label>
+                        <select id="dietary" class="form-select">
+                            <option>None</option>
+                            <option>Eggless</option>
+                            <option>Vegan</option>
+                            <option>Gluten Free</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="orderNotes" class="form-label">Additional Notes</label>
+                        <textarea id="orderNotes" placeholder="Any design ideas, messages on the cake, or special requests" class="form-textarea"></textarea>
+                    </div>
+
+                    <div class="form-checkbox-group">
+                        <input type="checkbox" id="orderConfirm" />
+                        <label for="orderConfirm" class="form-label">
+                            I confirm my order details and agree to the bakery’s policies.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Next Step</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="order-form-section">
+            <div class="order-form-container">
+                <div class="form-header">
+                    <h2 class="form-title">Payment Details</h2>
+                    <p class="form-subtitle">
+                        Payment is handled offline. Please provide your preferred payment method
+                        and reference details for order confirmation.
+                    </p>
+                </div>
+
+                <form class="order-form">
+                    <div class="form-group">
+                        <label for="paymentMethod" class="form-label">Payment Method</label>
+                        <select id="paymentMethod" class="form-select">
+                            <option>Cash on Pickup</option>
+                            <option>Bank Transfer</option>
+                            <option>Mobile Money</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payerName" class="form-label">Payer Name</label>
+                        <input type="text" id="payerName" placeholder="Name used for payment" class="form-input" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reference" class="form-label">Payment Reference (Optional)</label>
+                        <input type="text" id="reference" placeholder="Transaction ID or note" class="form-input" />
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="paymentNotes" class="form-label">Additional Notes</label>
+                        <textarea id="paymentNotes" placeholder="Any notes regarding payment" class="form-textarea"></textarea>
+                    </div>
+
+                    <div class="form-checkbox-group">
+                        <input type="checkbox" id="paymentConfirm" />
+                        <label for="paymentConfirm" class="form-label">
+                            I understand that payment will be completed offline.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Confirm Order</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-section hours">
+                    <h3 class="footer-heading">OPENING HOURS</h3>
+                    <div class="hours-row">
+                        <div class="hours-col">
+                            <p class="day-label">Monday - Friday</p>
+                            <p class="time-label">8:00 am to 9:00 pm</p>
+                        </div>
+                        <div class="hours-col">
+                            <p class="day-label">Saturday</p>
+                            <p class="time-label">8:00 am to 9:00 pm</p>
+                        </div>
+                        <div class="hours-col">
+                            <p class="day-label">Sunday</p>
+                            <p class="time-label">CLOSED</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section social">
+                    <h3 class="footer-heading">FOLLOW US</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-circle"><img src="../public/icons/facebook.png"></a>
+                        <a href="#" class="social-circle"><img src="../public/icons/instagram.png"></a>
+                        <a href="#" class="social-circle"><img src="../public/icons/twitter.png"></a>
+                        <a href="#" class="social-circle"><img src="../public/icons/yt.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 SweetRoot. All Right Reserved.</p>
+                <div class="legal-links">
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
