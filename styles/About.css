@@ -42,7 +42,7 @@
 .sweetroot-wrapper {
   max-width: 1000px;
   width: 100%;
-  padding: 10px;
+  padding: 70px 50px;
   background-color: var(--color-white);
   border: 1px solid var(--color-stroke);
   border-radius: 24px;
@@ -211,7 +211,7 @@
 .sweetroot-values .sweetroot-wrapper {
   max-width: 1000px;
   width: 100%;
-  padding: 10px;
+  padding: 60px 50px;
   background-color: var(--color-white);
   border: 1px solid var(--color-stroke);
   border-radius: 24px;

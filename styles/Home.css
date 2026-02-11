@@ -113,7 +113,12 @@ body {
   height: 580px;
   max-width: 420px;
   margin-right: 0;
+  transition: transform 0.3s ease;
 }
+ .main-hero-img:hover{
+  transform: translateY(-10px);
+ }
+
 
 /*----SPECIALS-----*/
 .special-menu-section {
